@@ -1,183 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cyber Clipper</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="page-shell">
-    <header class="topbar">
-      <div class="brand">
-        <div class="logo">
-          <span class="logo-mark">C</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cyber Clipper</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand">
+          <div class="logo"><span class="logo-mark">C</span></div>
+          <div>
+            <span class="brand-name">Cyber</span>
+            <span class="brand-highlight">Clipper</span>
+          </div>
         </div>
-        <div>
-          <span class="brand-name">Cyber</span>
-          <span class="brand-highlight">Clipper</span>
-        </div>
-      </div>
-      <button class="menu-button" aria-label="Open menu" id="menuToggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </header>
+        <button class="menu-button" aria-label="Open menu" id="menuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </header>
 
-    <div class="nav-panel" id="navPanel" aria-hidden="true">
-      <button class="nav-close" aria-label="Close menu" id="menuClose">×</button>
-      <nav class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#features">Features</a>
-        <a href="#workflow">How it works</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <div class="nav-actions">
-        <button class="btn-secondary">Login</button>
-        <button class="btn-primary">Sign Up</button>
+      <div class="nav-panel" id="navPanel" aria-hidden="true">
+        <button class="nav-close" aria-label="Close menu" id="menuClose">×</button>
+        <nav class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#features">Features</a>
+          <a href="#analytics">Analytics</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="btn-secondary">Login</button>
+          <button class="btn-primary">Sign Up</button>
+        </div>
       </div>
+
+      <main class="content">
+        <section class="hero-section" id="home">
+          <div class="hero-copy">
+            <span class="eyebrow">AI-powered defense / v3.14</span>
+            <h1>Next-gen security with <span>live intelligence</span></h1>
+            <p>Centralize monitoring, automate incident response, and see your attack surface clearly with one intelligent dashboard.</p>
+            <div class="hero-actions">
+              <a href="#contact" class="button button-primary">Start free trial</a>
+              <a href="#analytics" class="button button-secondary">View analytics</a>
+            </div>
+            <div class="hero-metrics">
+              <div><strong>99.99%</strong><span>uptime SLA</span></div>
+              <div><strong>&lt;45ms</strong><span>threat response</span></div>
+              <div><strong>24/7</strong><span>human + AI coverage</span></div>
+            </div>
+          </div>
+
+          <div class="hero-dashboard">
+            <div class="dashboard-card dashboard-card-large">
+              <div class="dashboard-header">
+                <span>Threat dashboard</span>
+                <span class="status-pill">Live</span>
+              </div>
+              <h2>All systems secure</h2>
+              <div class="dashboard-stats">
+                <div><span>Blocked</span><strong>5.1K</strong></div>
+                <div><span>Risk</span><strong>6.8</strong></div>
+                <div><span>Nodes</span><strong>18K</strong></div>
+              </div>
+              <svg viewBox="0 0 320 140" class="chart-svg" role="img" aria-label="Monthly threat trend chart">
+                <line x1="20" y1="120" x2="300" y2="120" stroke="rgba(255,255,255,0.18)" stroke-width="1"></line>
+                <line x1="20" y1="70" x2="300" y2="70" stroke="rgba(255,255,255,0.12)" stroke-width="1"></line>
+                <polyline fill="none" stroke="#2fd7ff" stroke-width="4" points="24,90 78,78 132,84 186,44 240,60 294,32"></polyline>
+                <circle cx="24" cy="90" r="5" fill="#ffffff"></circle>
+                <circle cx="78" cy="78" r="5" fill="#ffffff"></circle>
+                <circle cx="132" cy="84" r="5" fill="#ffffff"></circle>
+                <circle cx="186" cy="44" r="5" fill="#ffffff"></circle>
+                <circle cx="240" cy="60" r="5" fill="#ffffff"></circle>
+                <circle cx="294" cy="32" r="5" fill="#ffffff"></circle>
+              </svg>
+            </div>
+
+            <div class="dashboard-grid">
+              <div class="dashboard-card">
+                <span class="card-tag">Automation</span>
+                <h3>Response playbooks</h3>
+                <div class="card-progress">
+                  <span>Coverage</span>
+                  <strong>95%</strong>
+                </div>
+                <div class="progress-bar"><span style="width: 95%"></span></div>
+              </div>
+              <div class="dashboard-card">
+                <span class="card-tag">Map</span>
+                <h3>Threat landscape</h3>
+                <div class="network-graphic"></div>
+              </div>
+            </div>
+            <div class="badge-floating">Built for modern teams</div>
+          </div>
+        </section>
+
+        <section class="feature-section" id="features">
+          <div class="section-header">
+            <span class="section-label">Core capabilities</span>
+            <h2>Security operations that feel effortless.</h2>
+            <p>Bring analytics, automation, and visibility together in one streamlined view.</p>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="icon">AI</div>
+              <h3>Predictive threat detection</h3>
+              <p>Neural models identify suspicious behavior before it becomes a breach.</p>
+            </article>
+            <article class="feature-card">
+              <div class="icon">RT</div>
+              <h3>Continuous monitoring</h3>
+              <p>Track endpoints, cloud workloads, and network traffic from one control plane.</p>
+            </article>
+            <article class="feature-card">
+              <div class="icon">FW</div>
+              <h3>Adaptive firewall</h3>
+              <p>Auto-tune rules based on emerging risks and known attack patterns.</p>
+            </article>
+            <article class="feature-card">
+              <div class="icon">UX</div>
+              <h3>Executive insights</h3>
+              <p>Deliver readable summaries for leadership and operations teams alike.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="analytics-section" id="analytics">
+          <div class="section-header section-header-center">
+            <span class="section-label">Analytics</span>
+            <h2>See trends before they become incidents.</h2>
+          </div>
+          <div class="analytics-grid">
+            <div class="dashboard-card analytics-card">
+              <div class="dashboard-header">
+                <span>Threat trend</span>
+                <span class="status-pill">Rising</span>
+              </div>
+              <svg viewBox="0 0 320 140" class="chart-svg" role="img" aria-label="Threat trend chart">
+                <line x1="20" y1="120" x2="300" y2="120" stroke="rgba(255,255,255,0.18)" stroke-width="1"></line>
+                <line x1="20" y1="70" x2="300" y2="70" stroke="rgba(255,255,255,0.12)" stroke-width="1"></line>
+                <polyline fill="none" stroke="#2fd7ff" stroke-width="4" points="24,90 78,76 132,84 186,36 240,56 294,24"></polyline>
+              </svg>
+            </div>
+            <div class="dashboard-card analytics-card">
+              <div class="dashboard-header">
+                <span>Risk breakdown</span>
+                <span class="status-pill alt">Balanced</span>
+              </div>
+              <div class="bar-chart" role="img" aria-label="Risk breakdown chart">
+                <div class="bar-group">
+                  <div class="bar-track"><div class="bar-fill" style="height: 78%"></div></div>
+                  <span>Email</span>
+                </div>
+                <div class="bar-group">
+                  <div class="bar-track"><div class="bar-fill" style="height: 60%"></div></div>
+                  <span>Cloud</span>
+                </div>
+                <div class="bar-group">
+                  <div class="bar-track"><div class="bar-fill" style="height: 92%"></div></div>
+                  <span>Web</span>
+                </div>
+                <div class="bar-group">
+                  <div class="bar-track"><div class="bar-fill" style="height: 45%"></div></div>
+                  <span>Endpoints</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="workflow-section">
+          <div class="section-header section-header-center">
+            <span class="section-label">Workflow</span>
+            <h2>From onboarding to protection in four steps.</h2>
+          </div>
+          <div class="workflow-timeline">
+            <div class="workflow-step">
+              <span class="step-number">Step 01</span>
+              <p>Connect devices and services in minutes.</p>
+            </div>
+            <div class="workflow-step">
+              <span class="step-number">Step 02</span>
+              <p>Let AI scan for anomalies around the clock.</p>
+            </div>
+            <div class="workflow-step">
+              <span class="step-number">Step 03</span>
+              <p>Respond automatically with playbooks and quarantines.</p>
+            </div>
+            <div class="workflow-step">
+              <span class="step-number">Step 04</span>
+              <p>Review trends and improve readiness daily.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="pricing-section" id="pricing">
+          <div class="section-header section-header-center">
+            <span class="section-label">Pricing</span>
+            <h2>Flexible plans for every stage.</h2>
+          </div>
+          <div class="pricing-grid">
+            <article class="pricing-card">
+              <h3>Starter</h3>
+              <p class="plan-description">For founders and startups</p>
+              <div class="plan-price">$29</div>
+              <ul>
+                <li>1 workspace</li>
+                <li>Live dashboards</li>
+                <li>Email alerts</li>
+              </ul>
+              <button class="btn-primary plan-button">Choose plan</button>
+            </article>
+            <article class="pricing-card featured">
+              <h3>Growth</h3>
+              <p class="plan-description">For scaling security teams</p>
+              <div class="plan-price">$99</div>
+              <ul>
+                <li>Unlimited devices</li>
+                <li>Custom playbooks</li>
+                <li>Priority support</li>
+              </ul>
+              <button class="btn-primary plan-button">Choose plan</button>
+            </article>
+            <article class="pricing-card">
+              <h3>Enterprise</h3>
+              <p class="plan-description">For large organizations</p>
+              <div class="plan-price">Custom</div>
+              <ul>
+                <li>SSO + audit logs</li>
+                <li>Dedicated success manager</li>
+                <li>On-prem options</li>
+              </ul>
+              <button class="btn-primary plan-button">Choose plan</button>
+            </article>
+          </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+          <div class="contact-card">
+            <h2>Ready to strengthen your security stack?</h2>
+            <p>Book a guided demo and see your live threat posture in minutes.</p>
+            <a href="mailto:team@cyberclipper.io" class="button button-primary">Request a demo</a>
+          </div>
+        </section>
+      </main>
     </div>
-
-    <main class="content">
-      <section class="hero-section" id="home">
-        <div class="hero-copy">
-          <span class="eyebrow">AI-powered security / v3.14</span>
-          <h1>Next Generation <span>AI Cybersecurity</span></h1>
-          <p>Protect your business from cyber threats using AI-powered monitoring, real-time detection, advanced firewall protection, and intelligent analytics.</p>
-          <div class="hero-actions">
-            <a href="#contact" class="button button-primary">Start Free Trial</a>
-            <a href="#features" class="button button-secondary">Watch Demo</a>
-          </div>
-          <div class="hero-metrics">
-            <div>
-              <strong>99.99%</strong>
-              <span>Uptime SLA</span>
-            </div>
-            <div>
-              <strong>&lt;50ms</strong>
-              <span>Detection</span>
-            </div>
-            <div>
-              <strong>SOC 2</strong>
-              <span>Certified</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero-dashboard">
-          <div class="dashboard-card dashboard-card-large">
-            <div class="dashboard-header">
-              <span>Threat Dashboard</span>
-              <span class="status-pill">Live</span>
-            </div>
-            <h2>All systems secure</h2>
-            <div class="dashboard-stats">
-              <div>
-                <span>Blocked</span>
-                <strong>4.2K</strong>
-              </div>
-              <div>
-                <span>Risk</span>
-                <strong>8.4</strong>
-              </div>
-              <div>
-                <span>Nodes</span>
-                <strong>12K</strong>
-              </div>
-            </div>
-            <div class="mini-chart"></div>
-          </div>
-
-          <div class="dashboard-grid">
-            <div class="dashboard-card">
-              <span class="card-tag">AI Engine</span>
-              <h3>Neural v3.14</h3>
-              <div class="card-progress">
-                <span>Training</span>
-                <strong>98.2%</strong>
-              </div>
-              <div class="progress-bar"><span style="width: 98.2%"></span></div>
-            </div>
-            <div class="dashboard-card">
-              <span class="card-tag">Network</span>
-              <h3>Live topology</h3>
-              <div class="network-graphic"></div>
-            </div>
-          </div>
-
-          <div class="badge badge-floating">Made with Emergent</div>
-        </div>
-      </section>
-
-      <section class="feature-section" id="features">
-        <div class="section-header">
-          <span class="section-label">Core capabilities</span>
-          <h2>Enterprise-grade defence, unified.</h2>
-          <p>Eight layers of intelligent protection working as one adaptive system.</p>
-        </div>
-        <div class="feature-grid">
-          <article class="feature-card">
-            <div class="icon icon-blue">AI</div>
-            <h3>AI Threat Detection</h3>
-            <p>Detect attacks before they happen with predictive neural models.</p>
-          </article>
-          <article class="feature-card">
-            <div class="icon icon-cyan">RT</div>
-            <h3>Real-Time Monitoring</h3>
-            <p>24/7 system monitoring with sub-50ms anomaly response.</p>
-          </article>
-          <article class="feature-card">
-            <div class="icon icon-violet">FW</div>
-            <h3>Firewall Protection</h3>
-            <p>Protect perimeter and cloud workloads with adaptive rulesets.</p>
-          </article>
-          <article class="feature-card">
-            <div class="icon icon-green">UX</div>
-            <h3>Unified Visibility</h3>
-            <p>Centralize alerts and insights into a single mission control view.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="workflow-section" id="workflow">
-        <div class="section-header section-header-center">
-          <span class="section-label">Workflow</span>
-          <h2>How it works</h2>
-          <p>Five simple steps from signup to enterprise defence.</p>
-        </div>
-        <div class="workflow-timeline">
-          <div class="workflow-step">
-            <span class="step-number">Step 01</span>
-            <h3>Create Account</h3>
-            <p>Sign up in under 60 seconds. No credit card required.</p>
-          </div>
-          <div class="workflow-step">
-            <span class="step-number">Step 02</span>
-            <h3>Connect Your Devices</h3>
-            <p>Integrate endpoints, cloud, and network with one-click agents.</p>
-          </div>
-          <div class="workflow-step">
-            <span class="step-number">Step 03</span>
-            <h3>AI Starts Monitoring</h3>
-            <p>Intelligent detection begins immediately across every protected asset.</p>
-          </div>
-          <div class="workflow-step">
-            <span class="step-number">Step 04</span>
-            <h3>Respond Instantly</h3>
-            <p>Automated mitigation keeps threats contained and operations safe.</p>
-          </div>
-          <div class="workflow-step">
-            <span class="step-number">Step 05</span>
-            <h3>Optimize Continuously</h3>
-            <p>Machine learning improves posture over time with each attack blocked.</p>
-          </div>
-        </div>
-      </section>
-    </main>
-  </div>
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

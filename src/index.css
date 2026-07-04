@@ -1,11 +1,14 @@
 :root {
   color-scheme: dark;
   --bg: #03050f;
+  --surface: rgba(255,255,255,0.05);
+  --surface-strong: rgba(255,255,255,0.08);
   --text: #f8fafc;
   --muted: #98a8bf;
   --accent: #2fd7ff;
   --accent-2: #4c6fff;
   --success: #34d28d;
+  --border: rgba(255,255,255,0.12);
   --shadow: 0 28px 90px rgba(0, 0, 0, 0.35);
   --radius: 28px;
 }
@@ -29,6 +32,7 @@ body::before {
   opacity: 0.3;
 }
 
+#root { min-height: 100vh; }
 .page-shell { max-width: 1320px; margin: 0 auto; padding: 28px 28px 56px; position: relative; z-index: 1; }
 .topbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
 .brand { display: flex; align-items: center; gap: 14px; }
